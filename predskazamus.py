@@ -9,6 +9,7 @@ def start(message):
 
 @bot.message_handler(content_types = ['text'])
 def predskazanie(message):
+	print("get here")
 	a = random.randint(0, 8)
 	if a == 0:
 		bot.send_message(message.chat.id, 'Да!')
